@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+
+    <link rel="stylesheet" href="./ComePingmain.css">
+</head>
+
+<body>
+    <div class="quickmenu">
+        <ul>
+            <li><a href="#">캠핑장보러가기</a></li>
+            <li><a href="#">카톡 바로가기</a></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <a href="http://127.0.0.1:5500/project_1/ComePing.html">
+            <div id="mainimage"><img src="../images/캠핑메인.PNG" alt="" width="200px"></div>
+        </a>
+        <div id="mainfont"><a style="color: black;" href="http://127.0.0.1:5500/project_1/ComePing.html"><span>Come
+                    Ping</span></a></div>
+        <a href="">
+            <div class="main login">로그인</div>
+        </a>
+        <a href="">
+            <div class="main login">회원가입</div>
+        </a>
+    </div>
+    <div class="main">
+        <input class="placeholder" placeholder="검색어를 입력하세요...">
+        <!-- 기능 없음 돋보기 클릭시 홈페이지 이동 -->
+        <a href="http://127.0.0.1:5500/project_1/ComePing.html"><img class="search" src="../images/돋보기.PNG"
+                alt=""></a>
+    </div>
+    
+
+    <br><br><br><br>
+    <div>
+        <a href="">
+            <div class="box camping"><img src="../images/캠핑.PNG" alt="" width="80"></div>
+        </a>
+        <a href="">
+            <div class="box caraban"><img src="../images/카라반.PNG" alt="" width="80"></div>
+        </a>
+        <a href="">
+            <div class="box glamping"><img src="../images/글램핑.PNG" alt="" width="80"></div>
+        </a>
+        <a href="">
+            <div class="box pension"><img src="../images/팬션.PNG" alt="" width="80"></div><br>
+        </a>
+        <span class="cf" style="padding: 1px 165px 3px 215px;">캠핑</span><span class="cf"
+            style="padding: 1px 190px 3px 70px"> 카라반</span><span class="cf" style="padding: 0px 230px 3px 44px;">
+            글램핑</span><span class="cf"> 팬션</span></a>
+    </div>
+    <br><br><br>
+    <div>
+        <a href="">
+            <div class="box incar"><img src="../images/카박.PNG" alt="" width="80"></div>
+            <a href="">
+                <div class="box pet"><img src="../images/펫.PNG" alt="" width="80"></div>
+            </a>
+            <a href="">
+                <div class="box kids"><img src="../images/키즈.PNG" alt="" width="80"></div>
+            </a>
+            <a href="">
+                <div class="box picnic"><img src="../images/피크닉.PNG" alt="" width="80"></div>
+            </a><br>
+            <span class="cf" style="padding: 1px 160px 3px 215px;">카박</span><span class="cf1"
+                style="padding: 1px 160px 3px 80px">반려동물</span><span class="cf2" style="padding: 0px 240px 3px 70px;">
+                키즈</span><span class="cf3"> 피크닉</span>
+        </a>
+    </div>
+    <div class="slideshow-container">
+        
+        <div class="mySlideDiv fade active">
+            <img src="/images/슬라이드캠핑1.jpg" width="1000" height="250">
+        </div>
+
+        <div class="mySlideDiv fade">
+            <img src="/images/슬라이드캠핑2.jpg" width="1000" height="250">
+        </div>
+
+        <div class="mySlideDiv fade">
+            <img src="/images/슬라이드캠핑3.jpg" width="1000" height="250">
+        </div>
+
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+    </div>
+    <div>
+        <a href=""><div class="tip">캠핑 뉴비들을 위한 꿀팁
+            <img src="../images/꿀팁.PNG" alt="">
+        </div></a>
+
+        <div></div>
+        
+        <div></div>
+
+    </div>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".mySlideDiv").not(".active").hide();
+
+            setInterval(nextSlide, 3000);
+        });
+
+
+        function prevSlide() {
+            $(".mySlideDiv").hide();
+            var allSlide = $(".mySlideDiv");
+            var currentIndex = 0;
+
+
+            $(".mySlideDiv").each(function (index, item) {
+                if ($(this).hasClass("active")) {
+                    currentIndex = index;
+                }
+
+            });
+
+            var newIndex = 0;
+
+            if (currentIndex <= 0) {
+                newIndex = allSlide.length - 1;
+            } else {
+                newIndex = currentIndex - 1;
+            }
+
+
+            $(".mySlideDiv").removeClass("active");
+
+
+            $(".mySlideDiv").eq(newIndex).addClass("active");
+            $(".mySlideDiv").eq(newIndex).show();
+
+        }
+
+        function nextSlide() {
+            $(".mySlideDiv").hide();
+            var allSlide = $(".mySlideDiv");
+            var currentIndex = 0;
+
+            $(".mySlideDiv").each(function (index, item) {
+                if ($(this).hasClass("active")) {
+                    currentIndex = index;
+                }
+
+            });
+
+            var newIndex = 0;
+
+            if (currentIndex >= allSlide.length - 1) {
+
+                newIndex = 0;
+            } else {
+
+                newIndex = currentIndex + 1;
+            }
+
+            $(".mySlideDiv").removeClass("active");
+            $(".mySlideDiv").eq(newIndex).addClass("active");
+            $(".mySlideDiv").eq(newIndex).show();
+
+        }
+        $(document).ready(function () {
+            var currentPosition = parseInt($(".quickmenu").css("top"));
+            $(window).scroll(function () {
+                var position = $(window).scrollTop();
+                $(".quickmenu").stop().animate({ "top": position + currentPosition + "px" }, 1000);
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
