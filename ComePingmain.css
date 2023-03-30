@@ -4,25 +4,15 @@
     font-weight: normal;
     font-style: normal;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'KCCChassam';
-<<<<<<< HEAD
 }
 
 li {
     list-style: none;
-=======
-
-text-align: center;
-
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 }
 
 #mainimage {
@@ -39,10 +29,6 @@ text-align: center;
 
     width: 100%;
     display: inline-block;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
     text-align: center;
 }
 
@@ -57,10 +43,6 @@ text-align: center;
     border: 1px solid black;
     color: gray;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 #mainfont {
     width: auto;
     height: 50px;
@@ -68,7 +50,6 @@ text-align: center;
     position: relative;
     font-size: 3rem;
 }
-<<<<<<< HEAD
 
 .placeholder {
     width: 495px;
@@ -91,19 +72,11 @@ text-align: center;
     position: relative;
 }
 
-=======
-.placeholder {
-    width: 500px;
-    height: 30px;
-    position: relative;
-}
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .search {
     position: relative;
     height: 35px;
     top: 13px;
 }
-<<<<<<< HEAD
 
 .slideshow-container {
     width: 800px;
@@ -114,60 +87,28 @@ text-align: center;
 
 }
 
-=======
-.slideshow-container {
-    display: inline block;
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    margin-top: 60px;
-    
-}
-/* effect */
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 @-webkit-keyframes fade {
     from {
         opacity: .4
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
     to {
         opacity: 1
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 @keyframes fade {
     from {
         opacity: .4
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
     to {
         opacity: 1
     }
 }
-<<<<<<< HEAD
-
-=======
-/* Next & previous buttons */
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .prev,
 .next {
     cursor: pointer;
@@ -182,28 +123,15 @@ text-align: center;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
-<<<<<<< HEAD
-
-=======
-/* Position the "next button" to the right */
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 div,
 ul,
 li {
@@ -213,17 +141,11 @@ li {
     padding: 0;
     margin: 0
 }
-<<<<<<< HEAD
 
 a {
     text-decoration: none;
 }
 
-=======
-a {
-    text-decoration: none;
-}
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .quickmenu {
     position: absolute;
     width: 90px;
@@ -250,17 +172,12 @@ a {
     display: inline-block;
     *display: inline;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .quickmenu ul li a {
     position: relative;
     float: left;
     width: 100%;
     height: 30px;
     line-height: 30px;
-<<<<<<< HEAD
     color: #999;
     font-size: 9.5pt;
 }
@@ -271,49 +188,24 @@ a {
     margin-top: 60px;
     text-align: center;
     right: 5%;
-=======
-    text-align: center;
-    color: #999;
-    font-size: 9.5pt;
-}
-.menu{
-    display: inline block;
-    max-width:80%;
-    position: relative;
-    margin: auto;
-    margin-top: 60px;
-    text-align: center;
-
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 }
 
 .quickmenu ul li a:hover {
     color: #000;
 }
-<<<<<<< HEAD
 
 .quickmenu ul li:last-child {
     border-bottom: 0;
 }
 
-=======
-.quickmenu ul li:last-child {
-    border-bottom: 0;
-}
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .content {
     position: relative;
     min-height: 1000px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 .box {
     display: inline-block;
     margin-left: 190px;
 }
-<<<<<<< HEAD
 
 .ondermenu{
     width: 100%;
@@ -344,33 +236,6 @@ a {
     bottom: 200px;
     border-radius: 12px;
     left: 72%;
-=======
-.tip{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-    width: 300px;
-    height: 200px;
-    height: 300px;
-    border: 1px solid black;
-    position: relative;
-    left: 5%;
-    border-radius: 12px;
-    float: left;
-}
-.talk{
-    display: block;
-    width: 300px;
-    height: 300px;
-    float: right;
-    border-radius: 12px;
-    font-size: 2rem;
-}
-.ondermenu{
-    margin-top: 70px;
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 }
 #lbBtn {
     position: fixed;
@@ -384,7 +249,6 @@ a {
 }
 
 .lb-widget {
-<<<<<<< HEAD
     text-align: center;
     position: relative;
     margin: 0px ;
@@ -392,12 +256,6 @@ a {
     left: 35%;
     margin-top: -28%;
     
-=======
-    position: relative;
-    margin: 0px auto;
-    width: 50%;
-    left: 7%;
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 }
 
 .lb-widget .lb-dropdown-select-city {
@@ -429,19 +287,11 @@ a {
     height: 253px;
 }
 
-<<<<<<< HEAD
 .lb-main-01,
 .lb-main-02 {
     min-width: 120px;
     width: auto;
 }
-=======
-    .lb-main-01,
-    .lb-main-02 {
-        min-width: 120px;
-        width: auto;
-    }
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
 
 
 .lb-weather iframe,
@@ -505,13 +355,8 @@ select {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid #777;
-<<<<<<< HEAD
     -webkit-transform: (50% 20%);
     transform: (50% 20%);
-=======
-    -webkit-transform: origin(50% 20%);
-    transform: origin(50% 20%);
->>>>>>> 0b5f95b255d59c56ab4cbf3d5cfe6d4bdef19ead
     transition: all 0.125s ease-in-out;
     content: '';
     display: block;
