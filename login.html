@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#mainimage {
+    width: 200px;
+    height: 160px;
+
+    position: relative;
+    left: 1%;
+    text-align: center;
+    display: inline-block;
+}
+#mainfont {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+}
+.main {
+    text-align: center;
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'KCCChassam';
+    color: black;
+}
+.loginmain{
+    background-image: url(/project1/loginimage.PNG);
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 12px;
+}
+.id{
+    margin-top: 20px;
+    width: 230px;
+    height: 30px;
+    border-radius: 12px;
+}
+.ps{
+    margin-top: 30px;
+    width: 230px;
+    height: 30px;
+    border-radius: 12px;
+}
+.lo{
+    background-color: wheat;
+    margin-top: 25px;
+    width: 120px;
+    position: relative;
+    left: 37%;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.titlelo{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+    </style>
+</head>
+<body>
+<div>
+    <div class="main">
+        <a href="http://127.0.0.1:5500/project1/ComePing.html">
+            <div id="mainimage"><img src="/project1/캠핑메인.PNG" alt="" width="200px"></div>
+        </a>
+        <div id="mainfont"><a style="color: black;" href="http://127.0.0.1:5500/project1/ComePing.html"><span>Come
+                    Ping</span></a></div>
+</div>
+<div class="loginmain">
+    <p class="titlelo">로그인</p>
+    <p><input class="id"type="text" placeholder="아이디 입력"></p>
+    <p><input class="ps"type="password" placeholder="비밀번호 입력"></p>
+    <a href=""><p><div class="lo" class="login">로그인</div></p></a>
+    <a href=""><span class="id1 ids">아이디 찾기 /</span><span class="id1 pws">비밀번호 찾기 /</span></a><a href=""><span class="id1 user" > 회원가입</span></a>
+</div>
+</body>
+</html>

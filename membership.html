@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#mainimage {
+    width: 200px;
+    height: 160px;
+
+    position: relative;
+    left: 1%;
+    text-align: center;
+    display: inline-block;
+}
+#mainfont {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+}
+.main {
+    text-align: center;
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'KCCChassam';
+    color: black;
+}
+.membershipmain{
+    background-image: url(/project1/loginimage.PNG);
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 12px;
+}
+.id{
+    margin-top: 20px;
+    width: 230px;
+    height: 30px;
+    border-radius: 12px;
+}
+.ps{
+    margin-top: 15px;
+    width: 230px;
+    height: 30px;
+    border-radius: 12px;
+}
+.ps1{
+    margin-top: 15px;
+    width: 230px;
+    height: 30px;
+    border-radius: 12px;
+}
+.lo{
+    background-color: wheat;
+    margin-top: 20px;
+    width: 120px;
+    position: relative;
+    left: 37%;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.p{
+    position: relative;
+    right: 1%;
+}
+.titlelo{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+.ck{
+    margin-top: 15px;
+}
+    </style>
+</head>
+<body>
+<div>
+    <div class="main">
+        <a href="http://127.0.0.1:5500/project1/ComePing.html">
+            <div id="mainimage"><img src="/project1/캠핑메인.PNG" alt="" width="200px"></div>
+        </a>
+        <div id="mainfont"><a style="color: black;" href="http://127.0.0.1:5500/project1/ComePing.html"><span>Come
+                    Ping</span></a></div>
+</div>
+<div class="membershipmain">
+    <p class="titlelo">회원가입</p>
+    
+    <p>아이디 <input class="id"type="text" placeholder="아이디 입력"></p>
+    <p class="p">비밀번호 <input class="ps"type="password" placeholder="비밀번호 입력"></p>
+    <p>닉네임 <input class="ps1"type="text" placeholder="닉네임 입력"></p>
+    <p class="ck">(필수)개인정보 수집 및 이용 동의<input type="checkbox"></p>
+    <a href=""><p><div class="lo" class="login">가입 완료</div></p></a>
+
+
+</div>
+</body>
+</html>
