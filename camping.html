@@ -23,7 +23,7 @@
 
         #check-btn:checked~.menubars {
             display: block;
- 
+
         }
 
         .menubars {
@@ -36,19 +36,20 @@
 
         #check-btn1:checked~.menubars1 {
             display: block;
- 
+
         }
 
         .menubars1 {
             display: none;
         }
+
         #check-btn2 {
             display: none;
         }
 
         #check-btn2:checked~.menubars2 {
             display: block;
- 
+
         }
 
         .menubars2 {
@@ -61,7 +62,7 @@
             margin: 0px;
             margin-top: px;
             left: 10%;
-            
+
 
         }
 
@@ -133,16 +134,55 @@
         }
 
         body {
-            background-image: url(/project1/Color\ Hunt\ Palette\ f9f5ebe4dccfea5455002b5b.png);
-            background-size: cover;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .jb-box {
+            top: 0%;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0px auto;
+            position: absolute;
+            /* margin-top: 100px; */
+        }
+
+        .video-box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: fill;
+        }
+
+        .jb-text {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        .jb-text p {
+            margin-top: -24px;
+            text-align: center;
+            font-size: 48px;
+            color: #ffffff;
         }
 
         * {
             font-family: 'KCCChassam';
+            color: black;
         }
 
         .maintext {
-            margin-top: 70px;
+            margin-top: 30px;
             text-align: center;
             font-size: 3rem;
         }
@@ -154,6 +194,9 @@
 
         .bt {
             height: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 50px;
         }
 
         .in {
@@ -172,65 +215,102 @@
 
 
         .hea {
+            color: black;
             font-size: 2rem;
+            border-radius: 5px;
+            margin-right: 0px;
         }
 
         .hea2 {
-            background-color: lightgray;
+
             font-size: 1rem;
+            background-color: lightgray;
+            border-radius: 5px
         }
-        .click{
+
+        .click {
             position: relative;
             left: 50%;
             font-size: 1rem;
             background-color: lightgray;
+            border-radius: 5px;
         }
+        .quickmenu {
+    position: absolute;
+    width: 90px;
+    top: 10%;
+    margin-top: -50px;
+    right: 10px;
+    background: #fff;
+}
+.scmenu{
+    position: relative;
+}
+
+
     </style>
 </head>
 
 <body>
 
-
-    <div class="maintext"><i class="fa-solid fa-tents"></i>캠핑</div>
+    </div>
+    <div class="jb-box">
+        <div class="video-box">
+            <video muted autoplay loop>
+                <source src="캠핑영상.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+            </video>
+        </div>
+        <div class="jb-text">
+        </div>
+    </div>
+    <div class="maintext"><a href="http://127.0.0.1:5500/project1/ComePing.html"><div style="display: inline; position: relative; float: left; font-size: 1rem; margin-left: 10px; background-color: lightgray; border-radius: 5px;">홈페이지로이동</div></a><i class="fa-solid fa-tents" ></i>캠핑
+    </div>
     <div class="sc">
         <div class="scmenu">
             <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="캠핑장명을 검색해 보세요"
-                style="width: 300px; height: 30px; margin-bottom: 20px;"> <button class="bt">검색</button><br>
+                style="width: 300px; height: 30px; margin-bottom: 20px; border-radius: 15px;"> <button
+                class="bt">검색</button><br>
             <div class="in"><i class=" fa-solid fa-calendar-days"></i><input type="text" placeholder="날짜"
-                    style="width: 140px; height: 30px; margin-bottom: 20px;"> <button class="bt">검색</button></div>
+                    style="width: 140px; height: 30px; margin-bottom: 20px;border-radius: 15px;"> <button
+                    class="bt">검색</button></div>
             <div class="in"><i class=" fa-solid fa-location-dot"></i><input type="text" placeholder="장소"
-                    style="width: 140px; height: 30px;"> <button class="bt">검색</button></div>
+                    style="width: 140px; height: 30px;border-radius: 15px;"> <button class="bt">검색</button></div>
         </div>
     </div>
     <div class="line"></div>
-    <div style="text-align: center;">
+    <div style="margin-left: 120px;">
         <h1> 이달의 추천 캠핑 명소<i class="fa-solid fa-guitar"></i></h1>
-        
+
     </div>
     </div>
     <div class="slideshow-container">
-        
+
         <div class="mySlideDiv fade active">
-            <a href="https://www.haeyeorim.co.kr/1856/home/index"><img src="/project1/해여름빌리지.jpg" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/해여림 지도.jpg" alt="" width="400" height="300"></a>
+            <a href="https://www.haeyeorim.co.kr/1856/home/index" target="_blank"><img src="/project1/해여름빌리지.jpg" width="600"
+                    height="300" style="border-radius: 12px;"><img src="/project1/해여림 지도.jpg" alt="" width="380"
+                    height="300" style="border-radius: 12px; margin-left:3px;"></a>
             <span class="hea">해여림빌리지 55,000~<span class="click">※이미지 클릭시 홈페이지 이동
-            </span><br></span><span class="hea2" >캠핑‧펜션 / 경기도 여주시 산북면 해여림로 78</span> <br><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                    id="check-btn" type="checkbox"/>
-                <label for="check-btn" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+                </span><br></span><span class="hea2">캠핑‧펜션 / 경기도 여주시 산북면 해여림로 78</span> <br>
+            <div style="background-color: lightgray; width: 190px ;height: 35px; border-radius: 12px " ;><input
+                    id="check-btn" type="checkbox" />
+                <label for="check-btn" style="color: black; font-size: 2rem;" ;>캠핑소개 더보기</label>
                 <ul class="menubars">
-                    <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">※해여림빌리지는 가족 캠핑장 입니다. ※<br>
+                    <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">※해여림빌리지는
+                        가족 캠핑장 입니다. ※<br>
                         - 가족은 부모 자녀 포함하여 예약 할 수 있습니다<br>
                         - 커플 또는 성인 2인만 예약가능합니다<br>
                         - 커플 2쌍 두가족 사이트 예약 가능합니다.<br>
                         -방문객 입실 거절하며, 모르게 입실 시 발각 되면, 예약자 함께 가차 없이 퇴장조치 합니다.
                         <br><br>
                         ※ 예약 불가 인원은 친구나 지인끼리 3인또는 4인은 예약이 불가 합니다.<br>
-                        - 캠핑장 사이트 2개를 예약해서 3인이상(남자3인이나,4인 )모임은 절대 불가 합니다.<br> 이를 어길 경우 환불 없이 입실이 불가하며 가차없이 퇴실 조치합니다..<br><br>
-                        
+                        - 캠핑장 사이트 2개를 예약해서 3인이상(남자3인이나,4인 )모임은 절대 불가 합니다.<br> 이를 어길 경우 환불 없이 입실이 불가하며 가차없이 퇴실
+                        조치합니다..<br><br>
+
                         바이러스조차도 찾지 못하는 깊은 산속 캠핑장과 독채펜션<br>
                         일부 사이트에서 차박이 가능합니다<br>
                         곤지암, 양평, 이천 15KM 거리에 위치<br><br>
-                        
+
                         1. 펜션, 캠핑장에서 만드는 연인, 가족과의 잊지못할 데이트<br>
                         2. 자체 식물원에서 느끼는 사계절 힐링 산책<br>
                         3. 각종 지역 연회 및 워크샵 장소<br>
@@ -238,57 +318,62 @@
                         5. 수목원 부지에 지어진 특별한 캠핑장<br>
                         6. 전기 사용 600W 미만 사용(높은 왓트 전열기 사용시 캠핑장 전체 차단기 떨어집니다)<br>
                         7. 저녁 7시 이후 입실 불가<br>
-                        8. 일부 사이트들은 차박이 가능하며 프라이빗한 공간을 제공합니다</li><br>
+                        8. 일부 사이트들은 차박이 가능하며 프라이빗한 공간을 제공합니다
+                    </li><br>
                 </ul>
             </div>
         </div>
-        
-        <div class="mySlideDiv fade">
-            <a href="https://www.haeyeorim.co.kr/1856/home/index"><img src="/project1/펫힐링 달빛동물원캠핑장.jpg" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/펫힐링 달빛동물원캠핑장 시설.jpg" alt="" width="400" height="300"></a>
-            <span class="hea">펫힐링 달빛동물원캠핑장 50,000~<span class="click" >※이미지 클릭시 홈페이지 이동
-            </span><br><span class="hea2">캠핑 / 강원도 영월군 남면 나뱅이길 91</span><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                id="check-btn1" type="checkbox"/>
-            <label for="check-btn1" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
-            <ul class="menubars1">
-                <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">
-                    행복한 추억을 만드는 공간, <br><br>
 
-                    영월 테마파크 <br><br>
-                    
-                    펫힐링 달빛동물원!! <br><br>
-                    
-                    이색동물, 캠핑, 체험, 키즈관 등, <br><br>
-                    
-                    1박 2일이 모자란 달빛동물원에서의 힐링코스~<br><br>
-                    
-                    영월에서 만나요^^ <br><br>
-                    
-                    - 2021년도 수영장 이용은 7,8월만 가능합니다. <br>
-                    - 동물원 및 캠핑장 전구역 마스크 착용 <br>
-                    - 안전관리를 위해 동물원 및 캠핑장 전 구역 CCTV 촬영 중. <br>
-                    - 수영장에 돌이나 이물질 등을 넣지 않도록 아이들을 지도 바랍니다. <br>
-                    - 동물 먹이주기 체험 시, 반드시 보호자가 동반하셔야 합니다. <br>
-            </ul>
-        </div>
+        <div class="mySlideDiv fade">
+            <a href="https://www.haeyeorim.co.kr/1856/home/index"target="_blank"><img src="/project1/펫힐링 달빛동물원캠핑장.jpg" width="600"
+                    height="300" style="border-radius: 12px;"><img src="/project1/펫힐링 달빛동물원캠핑장 시설.jpg" alt=""
+                    width="380" height="300" style="border-radius: 12px; margin-left:3px;"></a>
+            <span class="hea">펫힐링 달빛동물원캠핑장 50,000~<span class="click" style="left: 36%;">※이미지 클릭시 홈페이지 이동
+                </span><br><span class="hea2">캠핑 / 강원도 영월군 남면 나뱅이길 91</span><br>
+                <div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px "
+                    ;><input id="check-btn1" type="checkbox" />
+                    <label for="check-btn1" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+                    <ul class="menubars1">
+                        <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">
+                            행복한 추억을 만드는 공간, <br><br>
+
+                            영월 테마파크 <br><br>
+
+                            펫힐링 달빛동물원!! <br><br>
+
+                            이색동물, 캠핑, 체험, 키즈관 등, <br><br>
+
+                            1박 2일이 모자란 달빛동물원에서의 힐링코스~<br><br>
+
+                            영월에서 만나요^^ <br><br>
+
+                            - 2021년도 수영장 이용은 7,8월만 가능합니다. <br>
+                            - 동물원 및 캠핑장 전구역 마스크 착용 <br>
+                            - 안전관리를 위해 동물원 및 캠핑장 전 구역 CCTV 촬영 중. <br>
+                            - 수영장에 돌이나 이물질 등을 넣지 않도록 아이들을 지도 바랍니다. <br>
+                            - 동물 먹이주기 체험 시, 반드시 보호자가 동반하셔야 합니다. <br>
+                    </ul>
+                </div>
         </div>
         <div class="mySlideDiv fade">
-            <a href="http://xn--392bl5av0gvtrz1h.kr/m/sp05.htm"><img src="/project1/평창 보물섬 캠핑장.jpg" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/평창 보물섬 캠핌장 시설.PNG" alt="" width="400" height="300"></a>
-            <span class="hea">평창 보물섬 캠핑장 40,000~<span class="click" >※이미지 클릭시 홈페이지 이동
-            </span><br><span class="hea2">방갈로‧캠핑 / 강원도 평창군 봉편면 거품소길 349-6</span><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                id="check-btn2" type="checkbox"/>
-            <label for="check-btn2" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
-            <ul class="menubars2">
-                <li style="width: 600px; border-radius: 12px;font-size: 1rem; background-color: #E4DCCF ;">
-                    청정지역 평창을 들어서며 느껴지는 공기는 <br>
-                    신선한 충격과 함께 편안한 휴식감을 안겨줍니다. <br><br>
-                    
-                    일상에서 벗어나 천혜의 자연환경 속에서 행복한 힘을 받고 가시기를 바랍니다. <br><br>
-                    
-                    넓고 쾌적한 캠핑장 편리하고 안전한 시설에서 최고의 휴식을 즐겨보세요
-            </ul>
-        </div>
+            <a href="http://xn--392bl5av0gvtrz1h.kr/m/sp05.htm"target="_blank"><img src="/project1/평창 보물섬 캠핑장.jpg" width="600"
+                    height="300" style="border-radius: 12px;"><img src="/project1/평창 보물섬 캠핌장 시설.PNG" alt="" width="380"
+                    height="300" style="border-radius: 12px; margin-left:3px;"></a>
+            <span class="hea">평창 보물섬 캠핑장 40,000~<span class="click" style="left: 42%;">※이미지 클릭시 홈페이지 이동
+                </span><br><span class="hea2">방갈로‧캠핑 / 강원도 평창군 봉편면 거품소길 349-6</span>
+                <div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px "
+                    ;><input id="check-btn2" type="checkbox" />
+                    <label for="check-btn2" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+                    <ul class="menubars2">
+                        <li style="width: 600px; border-radius: 12px;font-size: 1rem; background-color: #E4DCCF ;">
+                            청정지역 평창을 들어서며 느껴지는 공기는 <br>
+                            신선한 충격과 함께 편안한 휴식감을 안겨줍니다. <br><br>
+
+                            일상에서 벗어나 천혜의 자연환경 속에서 행복한 힘을 받고 가시기를 바랍니다. <br><br>
+
+                            넓고 쾌적한 캠핑장 편리하고 안전한 시설에서 최고의 휴식을 즐겨보세요
+                    </ul>
+                </div>
         </div>
         <a class="prev" onclick="prevSlide()">&#10094;</a>
         <a class="next" onclick="nextSlide()">&#10095;</a>
@@ -358,7 +443,6 @@
                 $(".mySlideDiv").eq(newIndex).addClass("active");
                 $(".mySlideDiv").eq(newIndex).show();
             }
-
         </script>
 
 </body>

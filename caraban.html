@@ -17,13 +17,62 @@
             font-style: normal;
         }
 
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .jb-box {
+            top: 0%;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0px auto;
+            position: absolute;
+            /* margin-top: 100px; */
+        }
+
+        .video-box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: fill;
+        }
+
+        .jb-text {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        .jb-text p {
+            margin-top: -24px;
+            text-align: center;
+            font-size: 48px;
+            color: #ffffff;
+        }
+
+        * {
+            font-family: 'KCCChassam';
+            color: black;
+        }
+
+
         #check-btn {
             display: none;
         }
 
         #check-btn:checked~.menubars {
             display: block;
- 
+
         }
 
         .menubars {
@@ -36,19 +85,20 @@
 
         #check-btn1:checked~.menubars1 {
             display: block;
- 
+
         }
 
         .menubars1 {
             display: none;
         }
+
         #check-btn2 {
             display: none;
         }
 
         #check-btn2:checked~.menubars2 {
             display: block;
- 
+
         }
 
         .menubars2 {
@@ -61,7 +111,7 @@
             margin: 0px;
             margin-top: px;
             left: 10%;
-            
+
 
         }
 
@@ -132,19 +182,11 @@
             text-decoration: none;
         }
 
-        body {
-            background-image: url(/project1/블루.png);
-            background-size: cover;
-        }
-
-        * {
-            font-family: 'KCCChassam';
-        }
-
         .maintext {
-            margin-top: 70px;
+            margin-top: 30px;
             text-align: center;
             font-size: 3rem;
+            position: relative;
         }
 
         .sc {
@@ -154,6 +196,7 @@
 
         .bt {
             height: 30px;
+            border-radius: 50px;
         }
 
         .in {
@@ -178,109 +221,135 @@
         .hea2 {
             background-color: lightgray;
             font-size: 1rem;
+            border-radius: 5px;
         }
-        .click{
+
+        .click {
             position: relative;
             left: 50%;
             font-size: 1rem;
+            border-radius: 5px;
             background-color: lightgray;
+        }
+        .scmenu{
+            position: relative;
         }
     </style>
 </head>
 
 <body>
+    <div class="jb-box">
+        <div class="video-box">
+            <video muted autoplay loop>
+                <source src="/project1/카라반영상.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+            </video>
+        </div>
+        <div class="jb-text">
+        </div>
+    </div>
 
-
-    <div class="maintext"><i class="fa-solid fa-caravan"></i>카라반</div>
+    <div class="maintext"><a href="http://127.0.0.1:5500/project1/ComePing.html"><div style="display: inline; position: relative; float: left; font-size: 1rem; margin-left: 10px; background-color: lightgray; border-radius: 5px;">홈페이지로이동</div></a><i class="fa-solid fa-caravan"></i>카라반
+</div>
     <div class="sc">
         <div class="scmenu">
             <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="캠핑장명을 검색해 보세요"
-                style="width: 300px; height: 30px; margin-bottom: 20px;"> <button class="bt">검색</button><br>
+                style="width: 300px; height: 30px; margin-bottom: 20px;margin-bottom: 20px; border-radius: 15px"> <button class="bt">검색</button><br>
             <div class="in"><i class=" fa-solid fa-calendar-days"></i><input type="text" placeholder="날짜"
-                    style="width: 140px; height: 30px; margin-bottom: 20px;"> <button class="bt">검색</button></div>
+                    style="width: 140px; height: 30px; margin-bottom: 20px;margin-bottom: 20px; border-radius: 15px"> <button class="bt">검색</button></div>
             <div class="in"><i class=" fa-solid fa-location-dot"></i><input type="text" placeholder="장소"
-                    style="width: 140px; height: 30px;"> <button class="bt">검색</button></div>
+                    style="width: 140px; height: 30px;margin-bottom: 20px; border-radius: 15px"> <button class="bt">검색</button></div>
         </div>
     </div>
     <div class="line"></div>
-    <div style="text-align: center;">
+    <div style="margin-left: 120px;">
         <h1> 이달의 추천 카라반 명소<i class="fa-solid fa-guitar"></i></h1>
-        
+
     </div>
     </div>
     <div class="slideshow-container">
-        
+
         <div class="mySlideDiv fade active">
-            <a href="https://bookhansan.campingt.me/3205/home/index"><img src="/project1/서울북한산카라반.jpg" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/서울북한산카라반시설.PNG" alt="" width="400" height="300"></a>
-            <span class="hea">서울북한산카라반 159,000~<span class="click">※이미지 클릭시 홈페이지 이동
-            </span><br></span><span class="hea2" >카라반 / 서울특별시 은평구 북한산로 242</span> <br><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                    id="check-btn" type="checkbox"/>
-                <label for="check-btn" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+            <a href="https://bookhansan.campingt.me/3205/home/index"target="_blank"><img src="/project1/서울북한산카라반.jpg" width="600"
+                    height="300" style="border-radius: 12px;"><img src="/project1/서울북한산카라반시설.PNG" alt="" width="380"
+                    height="300" style="border-radius: 12px; margin-left:3px;"></a>
+            <span class="hea">서울북한산카라반 159,000~<span class="click" style="left: 43%;">※이미지 클릭시 홈페이지 이동
+                </span><br></span><span class="hea2">카라반 / 서울특별시 은평구 북한산로 242</span> <br>
+            <div style="background-color: black; width: 190px ;height: 35px; border-radius: 12px; margin-top: 5px;" ;>
+                <input id="check-btn" type="checkbox" />
+                <label for="check-btn" style="color:white; font-size: 2rem;" ;>캠핑소개 더보기</label>
                 <ul class="menubars">
                     <li style="width: 600px; border-radius: 12px; background-color: #E4DCCF ;">
-                        <br><<<<<<예약 전 필독 주의사항>>>>>>
-<br><br>
-                        ※네이버예약과 위에 나와있는 홈페이지를 <br>
-                        제외한 다른 사이트는 예약이 불가합니다. <br>
-                        (가끔 다른플랫폼에서 마음대로 오픈합니다.) <br><br>
-                        
-                        ※두가족,두커플 이상 예약 절대불가. <br>
-                        (몰래 예약하고 와서 붙여달라고 할시 두팀 <br>
-                        모두 환불없이 강제퇴실입니다.!!) <br>
-                        
-                    
-                        
+                        <br>
+                        <<<<<<예약 전 필독 주의사항>>>>>>
+                            <br><br>
+                            ※네이버예약과 위에 나와있는 홈페이지를 <br>
+                            제외한 다른 사이트는 예약이 불가합니다. <br>
+                            (가끔 다른플랫폼에서 마음대로 오픈합니다.) <br><br>
+
+                            ※두가족,두커플 이상 예약 절대불가. <br>
+                            (몰래 예약하고 와서 붙여달라고 할시 두팀 <br>
+                            모두 환불없이 강제퇴실입니다.!!) <br>
+
+
+
             </div>
         </div>
-        
+
         <div class="mySlideDiv fade">
-            <a href="http://jejuptcar.com/m/"><img src="/project1/제주 플래티늄카라반.png" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/제주 플래티늄카라반시설.PNG" alt="" width="400" height="300"></a>
-            <span class="hea">제주 플래티늄카라반 139,000~<span class="click" >※이미지 클릭시 홈페이지 이동
-            </span><br><span class="hea2">카라반 / 제주틀별자치도 제주시 애월읍 하귀미수포길 5-8</span><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                id="check-btn1" type="checkbox"/>
-            <label for="check-btn1" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
-            <ul class="menubars1">
-                <li style="width: 600px; border-radius: 12px;font-size: 1rem; background-color: #E4DCCF ;">
-                    푸른바다와 함께하는 플래티늄카라반 <br>
-사랑하는 이들과 함께 즐기는 제주의 봄여름가을겨울 <br><br>
+            <a href="http://jejuptcar.com/m/"target="_blank"><img src="/project1/제주 플래티늄카라반.png" width="600" height="300"
+                    style="border-radius: 12px;"><img src="/project1/제주 플래티늄카라반시설.PNG" alt="" width="380" height="300"
+                    style="border-radius: 12px; margin-left:3px;"></a>
+            <span class="hea">제주 플래티늄카라반 139,000~<span class="click" style="left: 40%;">※이미지 클릭시 홈페이지 이동
+                </span><br><span class="hea2">카라반 / 제주틀별자치도 제주시 애월읍 하귀미수포길 5-8</span>
+                <div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px "
+                    ;><input id="check-btn1" type="checkbox" />
+                    <label for="check-btn1" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+                    <ul class="menubars1">
+                        <li style="width: 600px; border-radius: 12px;font-size: 1rem; background-color: #E4DCCF ;">
+                            푸른바다와 함께하는 플래티늄카라반 <br>
+                            사랑하는 이들과 함께 즐기는 제주의 봄여름가을겨울 <br><br>
 
-푸른바다로의 여행을 꿈꾸신다면 제주공항에서 20분거리에 있는 아름다운 애월의 바닷가에 위치한 플래티늄카라반 안에서 이루실 수 있습니다. <br><br>
+                            푸른바다로의 여행을 꿈꾸신다면 제주공항에서 20분거리에 있는 아름다운 애월의 바닷가에 위치한 플래티늄카라반 안에서 이루실 수 있습니다. <br><br>
 
-유럽과 북미에서 그명성을 이어가고 있는 독일 하비카라반은 최고의 디자인으로 카라반의 아름다움을 전해드립니다. <br><br>
+                            유럽과 북미에서 그명성을 이어가고 있는 독일 하비카라반은 최고의 디자인으로 카라반의 아름다움을 전해드립니다. <br><br>
 
-야자수가 펼쳐진 아름다운 조경과 모던한 인테리어는 쾌적하고 아늑한 공간을 연출합니다. <br>
-멋진펜션도 여러분을 기다립니다. <br><br>
+                            야자수가 펼쳐진 아름다운 조경과 모던한 인테리어는 쾌적하고 아늑한 공간을 연출합니다. <br>
+                            멋진펜션도 여러분을 기다립니다. <br><br>
 
-제주의 아름다운 바다가 한눈에 펼쳐지고, 바다에 나가 수영과 스노클링도 즐기고, <br> 통발로 문어도 잡고 귀여운 게도 보말도 잡고, 다양한 이벤트와 맛있는 바베큐 파티, <br> 제주 올레길 16코스와 애월맛집여행, 잊을 수 없는 제주의 매력을 선사해 드립니다. <br><br>
+                            제주의 아름다운 바다가 한눈에 펼쳐지고, 바다에 나가 수영과 스노클링도 즐기고, <br> 통발로 문어도 잡고 귀여운 게도 보말도 잡고, 다양한 이벤트와 맛있는 바베큐
+                            파티, <br> 제주 올레길 16코스와 애월맛집여행, 잊을 수 없는 제주의 매력을 선사해 드립니다. <br><br>
 
-제주플래티늄카라반에서 멋진 추억 만드시길 바랍니다.
-            </ul>
-        </div>
+                            제주플래티늄카라반에서 멋진 추억 만드시길 바랍니다.
+                    </ul>
+                </div>
         </div>
         <div class="mySlideDiv fade">
-            <a href="http://www.allseason.co.kr/"><img src="/project1/단양 포시즌카라반.png" width="600" height="300" style="border-radius: 12px;"><img
-                src="/project1/단양 포시즌카라반시설.png" alt="" width="400" height="300"></a>
-            <span class="hea">단양 포시즌카라반 100,000~<span class="click" >※이미지 클릭시 홈페이지 이동
-            </span><br><span class="hea2">카라반 / 충청북도 단양군 가곡면 남한강로 1117</span><div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px ";><input
-                id="check-btn2" type="checkbox"/>
-            <label for="check-btn2" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
-            <ul class="menubars2">
-                <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">
-                    저희 단양 포시즌펜션은 단양의 아름다운 남한강 강줄기위에 위치해 있으며, 현재 모든 객실은 캠핑카식 카라반으로 운영하고 있습니다. <br><br>
+            <a href="http://www.allseason.co.kr/"target="_blank"><img src="/project1/단양 포시즌카라반.png" width="600" height="300"
+                    style="border-radius: 12px;"><img src="/project1/단양 포시즌카라반시설.png" alt="" width="380" height="300"
+                    style="border-radius: 12px; margin-left:3px;"></a>
+            <span class="hea">단양 포시즌카라반 100,000~<span class="click" style="left: 43%;">※이미지 클릭시 홈페이지 이동
+                </span><br><span class="hea2">카라반 / 충청북도 단양군 가곡면 남한강로 1117</span>
+                <div style="border: 1px solid black;background-color: black; width: 190px ;height: 35px; border-radius: 12px "
+                    ;><input id="check-btn2" type="checkbox" />
+                    <label for="check-btn2" style="color: rgb(255, 255, 255); font-size: 2rem;" ;>캠핑소개 더보기</label>
+                    <ul class="menubars2">
+                        <li style="width: 600px; border-radius: 12px; font-size: 1rem; background-color: #E4DCCF ;">
+                            저희 단양 포시즌펜션은 단양의 아름다운 남한강 강줄기위에 위치해 있으며, 현재 모든 객실은 캠핑카식 카라반으로 운영하고 있습니다. <br><br>
 
-여러분들은 한번쯤 캠핑카를 타고 여행을 하는 꿈을 꾸었을 것입니다. 단양 포시즌펜션에서는 그 꿈을 잠시 이루어 드립니다. <br><br>
+                            여러분들은 한번쯤 캠핑카를 타고 여행을 하는 꿈을 꾸었을 것입니다. 단양 포시즌펜션에서는 그 꿈을 잠시 이루어 드립니다. <br><br>
 
-캠핑카에서 만끽하는 휴식은 일반 객실에서 느낄 수 없는 색다른 느낌을 얻을 것이고, 캠핑카 밖에서 남한강을 바라보며 즐기는 바베큐는 마치 긴 여행 중에서 즐기는 최고의 만찬이 될 것입니다. <br><br>
+                            캠핑카에서 만끽하는 휴식은 일반 객실에서 느낄 수 없는 색다른 느낌을 얻을 것이고, 캠핑카 밖에서 남한강을 바라보며 즐기는 바베큐는 마치 긴 여행 중에서 즐기는
+                            최고의 만찬이 될 것입니다. <br><br>
 
-주변관광지로 소백산, 고수동굴, 구인사, 도담삼봉, 온달산성, 온달동굴, 석문, 옥순봉, 구담봉이 있으며, 다양한 액티비티 (패러글라이딩, 레프팅, 클레이사격)를 할인된 가격으로 즐길 수 있습니다. <br><br>
+                            주변관광지로 소백산, 고수동굴, 구인사, 도담삼봉, 온달산성, 온달동굴, 석문, 옥순봉, 구담봉이 있으며, 다양한 액티비티 (패러글라이딩, 레프팅, 클레이사격)를
+                            할인된 가격으로 즐길 수 있습니다. <br><br>
 
-새로운 여행을 즐기고 싶으신 분은 저희 단양 포시즌펜션으로 오세요. 여러분의 색다른 여행에 불편함 없는 휴식이 되도록 최선을 다할 것입니다. <br><br>
+                            새로운 여행을 즐기고 싶으신 분은 저희 단양 포시즌펜션으로 오세요. 여러분의 색다른 여행에 불편함 없는 휴식이 되도록 최선을 다할 것입니다. <br><br>
 
-감사합니다.
-            </ul>
-        </div>
+                            감사합니다.
+                    </ul>
+                </div>
         </div>
         <a class="prev" onclick="prevSlide()">&#10094;</a>
         <a class="next" onclick="nextSlide()">&#10095;</a>
